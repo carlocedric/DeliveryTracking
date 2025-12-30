@@ -15,6 +15,8 @@ A simple SwiftUI app for tracking delivery orders with real-time status updates.
 - Order detail view with a status banner.
 - Supports mock repository for testing, with failure simulation.
 
+![Screenshots](https://i.ibb.co/d4b7g0mJ/Delivery-Tracking.jpg)
+
 ---
 
 ## Architecture
