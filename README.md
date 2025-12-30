@@ -57,11 +57,30 @@ A simple SwiftUI app for tracking delivery orders with real-time status updates.
 
 ---
 
-## Future Improvements
+## Future Improvements (due to time constraints or future enhabcemebts)
 
 - Replace `MockOrderRepository` with real API calls.
 - Add pull-to-refresh functionality.
 - Add error messages and retry UI for failed API calls.
 - Persist orders locally using Core Data or similar storage.
 - Add sorting and search capabilities.
+- Add automated UI Tests to verify navigation, filtering and status updates
+
+---
+
+### 🔹 Domain vs UI Models
+- UI uses view models, not raw data.
+- Keeps UI and data separate.
+- Easy to update if API changes.
+
+### 🔹 Testability by Design
+- Can swap real or mock data easily.
+- View models and manager centralize logic.
+- Safe async updates with @MainActor.
+
+### 🔹 Safe Evolution
+- Adding new order states only needs enum and color update.
+- `switch` statements handle new states.
+- Tests make sure filtering and UI still work.
+
 
